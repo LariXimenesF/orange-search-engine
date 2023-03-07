@@ -1,9 +1,27 @@
 body {
     
+      
+    
 }
 
 #mockup {
     background-image: url("../images/mockup-orange-mobile.png");
     width: 325px;
-height: 232px;
+    height: 232px;
 }
+
+p {
+    color: #031D5B;
+  }
+
+  h1 {
+    color: #031D5B;
+  }
+  
+  footer {
+    color: #031D5B;
+  }
+
+  ul {
+    color: #031D5B;
+  }
