@@ -19,15 +19,37 @@
 
     <!-- Início do conteúdo principal -->
 
-    <div>
+    <div class="content">
         <div id="mockup"></div>
-    </div>
+   
 
     <div id="section">
         <form action="">
-            <input type="text" placeholder="Search the web">
-            <input type="submit" value="">
+            <input id="search-field" type="text" placeholder="Search the web">
+            <input id="clear-button" type="reset" value="">
+            <input id="search-button" type="submit" value="">
         </form>
+
+        <script type="text/javascript">
+            var resetb =  document.getElementById("clear-button");
+            var offcansearch = document.getElementById('search-field');
+            
+            offcansearch.addEventListener('keyup', function() {
+            var searchSminput = offcansearch.value.length;
+            if (searchSminput == 0) {
+                resetb.style.display = "none";
+            } else {
+                resetb.style.display = "block";
+            }
+            });
+            
+            resetb.addEventListener('click', function() {
+            resetb.style.display = "none";
+            offcansearch.focus();
+            });
+        </script>
+
+
         <h1>Tired of your data being squeezed? 
             Here to help!</h1>
             <p>Get the online privacy protection you deserve for free with one download in the App Store:</p>
@@ -50,6 +72,8 @@
             </div>
         </div>
     </div>
+</div>
+
 
     <footer>Privacy for everyone</footer>
 
